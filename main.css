@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 26px 0;
+    background-color: #00BFFF;
+    border-bottom: 16px solid #81c6f1;
+}
+
+header h1 {
+    margin: 0 16px;
+    text-transform: uppercase;
+}
+
+button {
+    cursor: pointer;
+    background-color: rgb(196, 241, 255);
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: rgb(177, 210, 226);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    padding: 20px 0;
+    background-color: #cbdbf0;
+    align-items: center;
+    text-align: center;
+}
+
+form h2 {
+    padding: 18px;
+}
+
+form input {
+    text-align: center;
+    height: 34px;
+    border: none;
+    border-radius: 8px;
+}
+
+form input,
+botton {
+    margin-bottom: 18px;
+
+}
+
+#botao-cancelar {
+    background-color: #4682B4;
+}
+
+#botao-cancelar:hover {
+    background-color: #376a94;
+}
+
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    /* Quando o conteudo ocupar todo o limite da tela será criado uma nova linha*/
+}
+
+ul li {
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden;
+    /* Deveria ocultar todo o conteúdo que ultrapassasse o max-heith, porém não funciona no meu monitor/pc*/
+}
+
+ul li img {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+.overlay-imagem-link {
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+.overlay-imagem-link a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li:hover .overlay-imagem-link {
+    opacity: 1;
+}
